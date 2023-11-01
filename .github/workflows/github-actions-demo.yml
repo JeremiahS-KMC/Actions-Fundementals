@@ -16,6 +16,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:      
+      - name: Checkout code
+        uses: actions/checkout@v2
+          
       - name: Output the event name
         run: echo "Event that triggered this workflow:" ${{ github.event_name }}
         
