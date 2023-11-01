@@ -10,6 +10,7 @@ on:
       - main
   schedule:
     - cron: '15 6 * * 0' # This represents 6:15 UTC every Sunday
+  workflow_dispatch:
 jobs:
   Build:
     runs-on: ubuntu-latest
